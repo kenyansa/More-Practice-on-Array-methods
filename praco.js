@@ -45,3 +45,16 @@ const words = ['spray', 'limit', 'elite', 'exuberant', 'destruction', 'present']
 const outcome = words.filter((word) => word.length > 20); //returns empt array if no word is found meeting the condition
 
 console.log(outcome);
+
+//usign reduce method to add elements
+//initially, we could have:
+const numbas = [1,56,325,13445,78];
+let sum =0;
+for (let n of numbas)
+sum += n;
+console.log(sum);
+//using the reduce method:
+const jumla = numbas.reduce((accummulator, currentValue)=>{
+    return accummulator+currentValue;
+}, 0);
+console.log(jumla);
