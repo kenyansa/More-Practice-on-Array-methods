@@ -20,4 +20,24 @@ function getFullName(item) {
 const array = [2,3,4,5,6,7, 40,45];
 const bigNum = array.find(element=>element>30);
 console.log(bigNum);
+//Find an object in an array by one of its properties
+const matundaYaliyobaki = [
+    {jina:'papai', idadi: 5},
+    {jina: 'tofa', idadi: 10},
+    {jina: 'avokado', idadi: 20}
+];
+function niEmbe(tunda){
+    return tunda.jina ==='tofa';
+}
+console.log(matundaYaliyobaki.find(niEmbe));
+//Using arrow function and destructuring
+const inventory = [
+  {name: 'apples', quantity: 2},
+  {name: 'bananas', quantity: 0},
+  {name: 'cherries', quantity: 5}
+];
+
+const result = inventory.find( ({ name }) => name === 'cherries' );
+
+console.log(result)
 
