@@ -40,4 +40,8 @@ const inventory = [
 const result = inventory.find( ({ name }) => name === 'cherries' );
 
 console.log(result)
+//filter method
+const words = ['spray', 'limit', 'elite', 'exuberant', 'destruction', 'present'];
+const outcome = words.filter((word) => word.length > 20); //returns empt array if no word is found meeting the condition
 
+console.log(outcome);
