@@ -16,3 +16,10 @@ const studentNames = ["Justine", "Hera", "Matilda", "Ruth"];
 const rollCallz = studentNames.map(studentRollCall);
 //calling the created array
 console.log(rollCallz);
+
+//map() With a Function Expression
+const ztudents = ["harry", "ron", "hermione", "ginevra"];
+const lollCall = ztudents.map(function(ztudent) {
+  return ztudent + " the wizard";
+});
+console.log(lollCall)
