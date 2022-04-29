@@ -74,9 +74,42 @@ const users = [
       "Failure is not the opposite of success: it’s part of success",
   },
 ];
+// printing quotes of each person in the object
 function firstNamePrinter(collection) {
   for (const user of collection) {
     console.log(user.personalQuote);
   }
 }
 firstNamePrinter(users);
+//printing users whose fav color is blue
+function favBluePersons(collection) {
+  for (const user of collection) {
+    if (user.favoriteColor === "Blue") {
+      console.log(user.lastName);
+    }
+  }
+}
+favBluePersons(users);
+
+console.log("----------");
+//abstracting color into a variable
+function colorFilter(collection, color) {
+  for (const user of collection) {
+    if (user.favoriteColor === color) {
+      console.log(user.firstName);
+    }
+  }
+}
+
+colorFilter(users, "Red");
+// using filters
+console.log("----------")
+function filter(collection, attribute1, value1, attribute2, value2) {
+  for (const user of collection) {
+    if (user[attribute1] === value1 && user[attribute2] === value2) {
+      console.log(user.firstName);
+    }
+  }
+}
+
+filter(users, "favoriteAnimal", "Jaguar", "favoriteColor", "Blue");
