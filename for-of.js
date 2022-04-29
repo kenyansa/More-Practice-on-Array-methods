@@ -21,3 +21,9 @@ const xx = new Set([1, 1, 2, 2, 3, 3]);
 for (const value of xx) {
   console.log(value);
 }
+// Iterating over a DOM collection
+const articleParagraphs = document.querySelectorAll("article > p");
+
+for (const paragraph of articleParagraphs) {
+  paragraph.classList.add("read");
+}
